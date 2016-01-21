@@ -119,5 +119,7 @@ You will write your code in `js/events.js`. You will want to define your functio
 
 ## Resources
 
+There are many many more jQuery events. Take a look at the docs to learn about all of them!
+
 + [Browser Events](https://api.jquery.com/category/events/browser-events/)
 + [ASCII Key Values](http://keycode.info/)
