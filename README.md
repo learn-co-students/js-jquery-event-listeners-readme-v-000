@@ -115,7 +115,7 @@ You will write your code in `js/events.js`. You will want to define your functio
 
 + Define a function `pressIt` that does not accept a parameter. The function should bind a `keydown` event to the input field of the form that alerts a user when they have pressed the `g` key.
 
-+ Define a function `submitIt` that does not accept a parameter. The function should have an if-statement that only submits the form if the user types `"I love jQuery"`. If they do enter that string, the form should alert `"your form is going to be submitted now"`. And then `return;`,  If they didn't enter that specific string, the text `"Not Valid!"` should be appended to the `div` with the `html` function.
++ Define a function `submitIt` that does not accept a parameter. The function should alert `"your form is going to be submitted now"`. And then `return;`.
 
 ## Resources
 

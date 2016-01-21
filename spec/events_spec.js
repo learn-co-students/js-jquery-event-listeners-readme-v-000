@@ -1,7 +1,11 @@
 describe('jQuery Methods', function() {
 
   beforeEach(function() {
-    setFixtures('<body><p> This is some text to click</p><img src="https://s3.amazonaws.com/after-school-assets/minion-tongue.jpg"><form><input id="typing" type="text"><input type="submit"></form><div></div></body><style>.tasty { border-width: 5px; border-color: red; border-style: solid;}</style></body>');
+    functionWithAlert = jasmine.createSpy("functionWithAlert"); 
+
+    functionWithAlert("function uses an alert");
+
+    setFixtures('<body><p> This is some text to click</p><img src="https://s3.amazonaws.com/after-school-assets/minion-tongue.jpg"><form><input id="typing" type="text"><input id="submit" type="submit"></form><div></div></body><style>.tasty { border-width: 5px; border-color: red; border-style: solid;}</style></body>');
   });
 
   it('#doIt binds a click event to the paragraph', function() {
@@ -38,14 +42,9 @@ describe('jQuery Methods', function() {
     var myKey = [];
     for (var key in formSubmitEvent){ myKey.push(key);}
     expect(myKey[0]).toEqual("submit");
+    expect(functionWithAlert).toHaveBeenCalledWith('function uses an alert');
   });
 
-  it('#submitIt does not submit the form without the correct input value', function() {
-    $('#typing').val("this is a form entry");
-    submitIt();
-    $('form').submit();
-    expect($('div:last')[0].innerHTML).toEqual("Not Valid!");
-  });
 
 });
   
