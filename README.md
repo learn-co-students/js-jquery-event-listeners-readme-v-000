@@ -22,7 +22,7 @@ Let's take a basic example:
 <h1> This is some text to click</h1>
 ```
 
-Given the above HTML, let's set up an event handler to pay attention to this `p` tag:
+Given the above HTML, let's set up an event handler to pay attention to this `h1` tag:
 
 ```js
 $('h1').on("eventname", function(){
@@ -30,7 +30,7 @@ $('h1').on("eventname", function(){
 });
 ```
 
-We use to `on` bind an event to the HTML element we selected (in this case `p`). The `on` function takes an argument of the name of the event you want the user to take. Whenever that event happens, the code inside the function will run. 
+We use to `on` bind an event to the HTML element we selected (in this case `h1`). The `on` function takes an argument of the name of the event you want the user to take. Whenever that event happens, the code inside the function will run. 
 
 Sometimes you will see `live` in place of on, but they behave in the exact same way, and `on` is used much more frequently.
 
