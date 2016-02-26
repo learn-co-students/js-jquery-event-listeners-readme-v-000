@@ -89,7 +89,7 @@ Let's walk through how `keydown` works. We use `document` as our selector, and b
 
 ### submit
 
-The `submit` event submits a form. Let's set up our submit event so that only submits the form if a certain value has been entered in the text field:
+The `submit` event submits a form. Let's set up our submit event so that it only submits the form if a certain value has been entered in the text field:
 
 ```js
 $("form").on("submit", function() {
@@ -125,3 +125,5 @@ There are many many more jQuery events. Take a look at the docs to learn about a
 + [ASCII Key Values](http://keycode.info/)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-jquery-event-listeners-readme' title='jQuery Event Listeners'>jQuery Event Listeners</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-jquery-event-listeners-readme'>jQuery Event Listeners </a> on Learn.co and start learning to code for free.</p>
