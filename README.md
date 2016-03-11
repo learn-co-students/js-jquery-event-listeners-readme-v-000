@@ -30,9 +30,7 @@ $('h1').on("eventname", function(){
 });
 ```
 
-We use `on` to bind an event to the HTML element we selected (in this case `h1`). The `on` function takes an argument of the name of the event you want the user to take. Whenever that event happens, the code inside the function will run. 
-
-Sometimes you will see `live` in place of on, but they behave in the exact same way, and `on` is used much more frequently.
+We use `on` to bind an event to the HTML element we selected (in this case `h1`). The `on` function takes an argument of the name of the event you want the user to take. Whenever that event happens, the code inside the function will run.
 
 ### load
 
@@ -53,7 +51,7 @@ $('img').on('load', function(){
 
 The `keypress` event keeps track of every time a key on the keyboard is pressed (excluding ALT, CTRL, SHIFT, ESC). It's important to note that `keypress` isn't covered by browser specifications, so it's behavior isn't guaranteed.
 
-`keydown` tracks every time a key is pressed down on the keyboard, and the `keyup` checks every time a key press is released. 
+`keydown` tracks every time a key is pressed down on the keyboard, and the `keyup` checks every time a key press is released.
 
 keypress:
 
@@ -105,7 +103,7 @@ $("form").on("submit", function() {
 In the example above, we are using the `submit` event. We use the HTML `form` as our selector to bind the event on. We then set up an if-statement that checks to see if the value of the first input is `"correct"`. If the user typed `"correct"` then the alert `'your form is going to be submitted now'` will appear, and the function will `return` so that no other lines of code will be executed. If they didn't enter `"correct"` the alert `"you entered the wrong value"` will appear. As of right now, the form is still submitting even with the wrong value, but later we'll learn how to prevent that from happening.
 
 
-## Instructions 
+## Instructions
 
 You will write your code in `js/events.js`. You will want to define your functions outside of the document ready, and call them inside of this. This way, your tests will run as expected and you can test your code in the browser as well.
 
@@ -123,6 +121,10 @@ There are many many more jQuery events. Take a look at the docs to learn about a
 
 + [Browser Events](https://api.jquery.com/category/events/browser-events/)
 + [ASCII Key Values](http://keycode.info/)
+
+And keep in mind that jQuery events are based on the `Event` class that's built into browsers. You can read more about `Event` here:
+
++ [Event](https://developer.mozilla.org/en-US/docs/Web/API/Event)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-jquery-event-listeners-readme' title='jQuery Event Listeners'>jQuery Event Listeners</a> on Learn.co and start learning to code for free.</p>
 
