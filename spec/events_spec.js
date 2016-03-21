@@ -26,7 +26,6 @@ describe('jQuery Methods', function() {
 
    it('#pressIt alerts the user when the g key was pressed down', function() {
     pressIt();
-    // debugger;
     var input = $('#typing')[0];
     var inputPressEvent = $._data(input, "events");
     var myKey = [];
