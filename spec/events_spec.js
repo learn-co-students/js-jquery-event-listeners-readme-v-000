@@ -35,15 +35,15 @@ describe('jQuery Methods', function() {
     expect(myKey[0]).toEqual("keydown");
   });
 
-  it('#submitIt submits the form if the user enters "I love jQuery', function() {
-    submitIt();
-    var myForm = $('form')[0];
-    var formSubmitEvent = $._data(myForm, "events");
-    var myKey = [];
-    for (var key in formSubmitEvent){ myKey.push(key);}
-    expect(myKey[0]).toEqual("submit");
-    expect(functionWithAlert).toHaveBeenCalledWith('function uses an alert');
-  });
+  // it('#submitIt submits the form if the user enters "I love jQuery', function() {
+  //   submitIt();
+  //   var myForm = $('form')[0];
+  //   var formSubmitEvent = $._data(myForm, "events");
+  //   var myKey = [];
+  //   for (var key in formSubmitEvent){ myKey.push(key);}
+  //   expect(myKey[0]).toEqual("submit");
+  //   expect(functionWithAlert).toHaveBeenCalledWith('function uses an alert');
+  // });
 
 
 });
