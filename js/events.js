@@ -22,7 +22,9 @@ function pressIt(){
 
 function submitIt(){
   $('form').on('submit', function(){
-    alert('your form is going to be submitted now');
+    if($('input').val() === "I love JQuery"){
+      alert('your form is going to be submitted now');
+    }
   });
 }
 
