@@ -1,14 +1,14 @@
 describe('jQuery Methods', function() {
 
   beforeEach(function() {
-    functionWithAlert = jasmine.createSpy("functionWithAlert"); 
+    functionWithAlert = jasmine.createSpy("functionWithAlert");
 
     functionWithAlert("function uses an alert");
 
     setFixtures('<body><p> This is some text to click</p><img src="https://s3.amazonaws.com/after-school-assets/minion-tongue.jpg"><form><input id="typing" type="text"><input id="submit" type="submit"></form><div></div></body><style>.tasty { border-width: 5px; border-color: red; border-style: solid;}</style></body>');
   });
 
-  it('#doIt binds a click event to the paragraph', function() {
+  it('#getIt binds a click event to the paragraph', function() {
     getIt();
     var p = $('p')[0];
     var pClickEvent = $._data(p, "events");
@@ -47,4 +47,3 @@ describe('jQuery Methods', function() {
 
 
 });
-  
