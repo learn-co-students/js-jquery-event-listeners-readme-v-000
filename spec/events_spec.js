@@ -1,7 +1,7 @@
 describe('jQuery Methods', function() {
 
   beforeEach(function() {
-    functionWithAlert = jasmine.createSpy("functionWithAlert"); 
+    functionWithAlert = jasmine.createSpy("functionWithAlert");
 
     functionWithAlert("function uses an alert");
 
@@ -47,4 +47,3 @@ describe('jQuery Methods', function() {
 
 
 });
-  
