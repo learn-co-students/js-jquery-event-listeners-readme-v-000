@@ -127,5 +127,3 @@ And keep in mind that jQuery events are based on the `Event` class that's built 
 + [Event](https://developer.mozilla.org/en-US/docs/Web/API/Event)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-jquery-event-listeners-readme' title='jQuery Event Listeners'>jQuery Event Listeners</a> on Learn.co and start learning to code for free.</p>
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-jquery-event-listeners-readme'>jQuery Event Listeners </a> on Learn.co and start learning to code for free.</p>
