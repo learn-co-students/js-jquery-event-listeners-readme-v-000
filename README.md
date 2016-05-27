@@ -109,11 +109,11 @@ You will write your code in `js/events.js`. You will want to define your functio
 
 + Define a function `getIt` that does not accept a parameter. The function should bind a `click` event to the `p` tag. When the paragraph is clicked, the function should alert `"Hey!"`.
 
-+ Define a function `frameIt` that does not accept a parameter. The function should bind a `load` event that adds the class `tasty` to the image to add a red frame to the image.
++ Define a function `frameIt` that does not accept a parameter. The function should bind the `load` event that adds the class `tasty` to the image to add a red frame to the image.
 
 + Define a function `pressIt` that does not accept a parameter. The function should bind a `keydown` event to the input field of the form that alerts a user when they have pressed the `g` key.
 
-+ Define a function `submitIt` that does not accept a parameter. The function should alert `"your form is going to be submitted now"`. And then `return;`.
++ Define a function `submitIt` that does not accept a parameter. The function should bind a `submit` event to the form that alerts `"Your form is going to be submitted now."`.
 
 ## Resources
 
@@ -127,5 +127,3 @@ And keep in mind that jQuery events are based on the `Event` class that's built 
 + [Event](https://developer.mozilla.org/en-US/docs/Web/API/Event)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-jquery-event-listeners-readme' title='jQuery Event Listeners'>jQuery Event Listeners</a> on Learn.co and start learning to code for free.</p>
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-jquery-event-listeners-readme'>jQuery Event Listeners </a> on Learn.co and start learning to code for free.</p>
