@@ -19,9 +19,9 @@ function submitIt() {
 }
 
 function pressIt() {
-  $(document).on('keydown', function(key) {
-    if(key.keyCode == 71) {
-      alert('You pressed G');
+  $('#typing').on('keydown', function(key) {
+    if(key.which === 71) {
+      alert("You pressed 'g'!")
     }
   });
 }
@@ -31,6 +31,4 @@ $(document).ready(function(){
   frameIt();
   submitIt();
   pressIt();
-// call functions here
-
 });
