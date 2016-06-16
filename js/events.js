@@ -19,7 +19,7 @@ function frameIt() {
 
 function pressIt() {
 $('#typing').on('keydown', function(key) {
-    if(key.keyCode === 71){
+    if(key.which === 71){
         alert('s was pressed');
     }
   });
