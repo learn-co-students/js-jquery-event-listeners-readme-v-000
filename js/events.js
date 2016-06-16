@@ -1,4 +1,5 @@
 //define functions here
+'use strict';
 
 $(document).ready(function(){
 
@@ -16,17 +17,17 @@ function frameIt() {
   });
 }
 
-function submitIt() {
-  $('form').on('submit', function () {
-    alert("Your form is going to be submitted now.");
+function pressIt() {
+$('#typing').on('keydown', function(key) {
+    if(key.keyCode === 71){
+        alert('s was pressed');
+    }
   });
 }
 
-function pressIt() {
-  $(document).on('keydown', function(key) {
-    if(key.keyCode == 71 ){
-      console.log("run");
-      alert("You pressed G!");
-    }
+
+function submitIt() {
+  $('form').on('submit', function () {
+    alert("Your form is going to be submitted now.");
   });
 }

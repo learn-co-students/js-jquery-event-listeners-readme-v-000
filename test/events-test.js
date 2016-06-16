@@ -47,7 +47,7 @@ describe('Selectors', () => {
   });
 
   describe('pressIt()', () => {
-    it('pressIt() binds an event that alerts the user when the g key was pressed down', function() {
+    it('binds an event that alerts the user when the g key was pressed down', function() {
       window.alert = expect.createSpy()
 
       window.pressIt();
@@ -56,8 +56,8 @@ describe('Selectors', () => {
       const event = window.$.Event('keydown', { which: 71 })
       input.trigger(event)
 
-      expect(window.alert).toHaveBeenCalled()
-    })
+      expect(window.alert).toHaveBeenCalled();
+    });
 
     it('does not alert if another key is pressed', () => {
       window.alert = expect.createSpy()
