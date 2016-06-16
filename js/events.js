@@ -25,6 +25,7 @@ function submitIt() {
 function pressIt() {
   $(document).on('keydown', function(key) {
     if(key.keyCode == 71 ){
+      console.log("run");
       alert("You pressed G!");
     }
   });
