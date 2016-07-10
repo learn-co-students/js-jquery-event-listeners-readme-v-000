@@ -10,12 +10,13 @@ $('img').addClass('tasty');
 });
 }
 
-function pressIt(){
-  $(document).on(‘keydown’, function(key){
-if(key.keyCode == 71){
-alert(‘g was pressed’);
-}
-});
+function pressIt() {
+  $('#typing').on('keydown', function(e) {
+    // 'g' corresponds to 71
+    if (e.which === 71) {
+      alert("You pressed 'g'!")
+    }
+  })
 }
 
 function submitIt(){
