@@ -1,3 +1,5 @@
+'use strict';
+
 //define functions here
 
 //define functions here
@@ -14,18 +16,17 @@ function frameIt() {
   })
 }
 
-function pressIt() {
-  $('#typing').on('keydown', function(key) {
-    if (key.keyCode == 71) {
-      alert("Aintt nothing but a g thang babby")
-    }
-  })
-
-}
+function pressIt(){
+   $('#typing').on('keydown', function(key){
+     if(key.keyCode == 103){
+           alert('g was pressed');
+       }
+   })
+ }
 
 function submitIt() {
   $('form').on('submit', function(){
-    alert("Your input will be submitted.")
+    alert("Your form is going to be submitted now.")
     
   })
 
