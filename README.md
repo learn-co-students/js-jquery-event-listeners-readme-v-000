@@ -57,8 +57,8 @@ keypress:
 
 ```js
 $(document).on('keypress', function(key) {
-  if(key.keyCode == 13){
-      alert('enter was pressed');
+  if (key.which == 13){
+    alert('enter was pressed');
   }
 });
 ```
@@ -66,8 +66,8 @@ $(document).on('keypress', function(key) {
 keyup:
 ```js
 $(document).on('keyup', function(key) {
-  if(key.keyCode == 82){
-      alert('r was pressed');
+  if (key.which == 82){
+    alert('r was pressed');
   }
 });
 ```
@@ -75,7 +75,7 @@ $(document).on('keyup', function(key) {
 keydown:
 ```js
 $(document).on('keydown', function(key) {
-  if(key.keyCode == 83){
+  if(key.which == 83){
       alert('s was pressed');
   }
 });
@@ -83,7 +83,7 @@ $(document).on('keydown', function(key) {
 
 The three examples above use `document` as the jQuery selector, so any time a key is pressed anywhere on the screen, the alert will appear. If you want to check if the cursor is in a particular area (like an input field) then you would just need to change the selector.
 
-Let's walk through how `keydown` works. We use `document` as our selector, and bind the `keydown` event. We pass `theKey` to the function as an argument. Inside the function, we set up an `if` statement that checks if the `keyCode` of the pressed key matches. `83` is the ASCII code for `s`. If the `s` key was pressed, the alert `"s was pressed"` will appear.
+Let's walk through how `keydown` works. We use `document` as our selector, and bind the `keydown` event. We pass `theKey` to the function as an argument. Inside the function, we set up an `if` statement that checks if the `which` of the pressed key matches. `83` is the ASCII code for `s`. If the `s` key was pressed, the alert `"s was pressed"` will appear.
 
 ### submit
 
