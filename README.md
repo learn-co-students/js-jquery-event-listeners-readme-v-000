@@ -8,9 +8,7 @@
 
 Ever used a website where an action you took triggered something to happen on the page? You clicked part of a form and suddenly more to fill out appeared. You moused over part of the page and a modal window appeared. On Facebook, you click to see more comments and the rest appear. The list goes on and on and on. When these actions happen, code is responding to an event taken by a user, and responding with an action.
 
-In JavaScript, these things that happen are called **DOM events** and the code written to trigger the action is called an **event listener** or **event handler**
-
-
+In JavaScript, these things that happen are called **DOM events** and the code written to trigger the action is called an **event listener** or **event handler**.
 
 ## Attach Event Handler
 
@@ -49,9 +47,9 @@ $('img').on('load', function(){
 
 ### keypress, keydown, keyup
 
-The `keypress` event keeps track of every time a key on the keyboard is pressed (excluding ALT, CTRL, SHIFT, ESC). It's important to note that `keypress` isn't covered by browser specifications, so it's behavior isn't guaranteed.
+The `keypress` event keeps track of every time a key on the keyboard is pressed (excluding ALT, CTRL, SHIFT, ESC). It's important to note that `keypress` isn't covered by browser specifications, so its behavior isn't guaranteed.
 
-`keydown` tracks every time a key is pressed down on the keyboard, and the `keyup` checks every time a key press is released.
+`keydown` tracks every time a key is pressed down on the keyboard, and `keyup` checks every time a key press is released.
 
 keypress:
 
@@ -83,7 +81,7 @@ $(document).on('keydown', function(key) {
 
 The three examples above use `document` as the jQuery selector, so any time a key is pressed anywhere on the screen, the alert will appear. If you want to check if the cursor is in a particular area (like an input field) then you would just need to change the selector.
 
-Let's walk through how `keydown` works. We use `document` as our selector, and bind the `keydown` event. We pass `theKey` to the function as an argument. Inside the function, we set up an `if` statement that checks if the `which` of the pressed key matches. `83` is the ASCII code for `s`. If the `s` key was pressed, the alert `"s was pressed"` will appear.
+Let's walk through how `keydown` works. We use `document` as our selector and bind the `keydown` event. We pass `key` to the function as an argument. Inside the function, we set up an `if` statement that checks if the `which` of the pressed key matches. `83` is the ASCII code for `s`. If the `s` key was pressed, the alert `"s was pressed"` will appear.
 
 ### submit
 
@@ -117,7 +115,7 @@ You will write your code in `js/events.js`. You will want to define your functio
 
 ## Resources
 
-There are many many more jQuery events. Take a look at the docs to learn about all of them!
+There are many, many more jQuery events. Take a look at the docs to learn about all of them!
 
 + [Browser Events](https://api.jquery.com/category/events/browser-events/)
 + [ASCII Key Values](http://keycode.info/)
