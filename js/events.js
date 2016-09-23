@@ -1,7 +1,7 @@
 //define functions here
 
 function getIt() {
-  alert('Hey!');
+  return alert('Hey!');
 }
 
 function frameIt() {
@@ -9,9 +9,11 @@ function frameIt() {
 }
 
 function pressIt() {
-  if ($('#typing').val() == 'g') {
-    return alert('g key pressed');
-  }
+  $('#typing').on("keydown", function(key) {
+    if (key.which === 71) {
+      alert('g key pressed');
+    }
+  });
 }
 
 function submitIt() {
@@ -19,10 +21,8 @@ function submitIt() {
 }
 
 $(document).ready(function(){
-  debugger;
 // call functions here
   $('p').on("click", getIt());
   $('img').on("load", frameIt());
-  $('#typing').on("keydown", pressIt());
   $('form').on("submit", submitIt());
 });
