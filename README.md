@@ -64,7 +64,7 @@ $(document).on('keypress', function(key) {
 keyup:
 ```js
 $(document).on('keyup', function(key) {
-  if (key.which == 82){
+  if (key.which == 71){
     alert('r was pressed');
   }
 });
