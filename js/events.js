@@ -1,41 +1,42 @@
 //define functions here
 
-$(document).ready(function(){
+function getIt() {
+  $("p").on("click", function() {
+    alert("Hey!");
+    return;
+  });
+}
+
+function frameIt() {
+  $("img").addClass("tasty").on("load", function() {
+    return;
+  });
+}
+
+function pressIt() {
+  $(document).on("keydown", function(key) {
+    //if (key) {
+      if (key.which == 71) {
+        alert("g was pressed");
+      //}
+    }
+  });
+}
+
+function submitIt() {
+  $("form").on("submit", function() {
+    alert("Your form is going to be submitted now.");
+    return;
+  });
+}
+
 
 // call functions here
 
-$('p').on('click', getIt = function() {
-    alert('Hey!');
-    return;
+
+$(document).ready(function() {
+  getIt();
+  frameIt();
+  pressIt();
+  submitIt();
 })
-
-
-$('img').addClass('tasty').on('load', frameIt = function() {
-    return;
-})
-
-/* 
-$('document').on('keydown', pressIt = function(key) {
-  {
-    if (key.which == 71) {
-      alert('You pressed the 'g' key, genius...');
-    return;
-    }
-  }
-})
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-});
