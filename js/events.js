@@ -27,4 +27,8 @@ function submitIt() {
 //Doc changes below
 $(document).ready(function(){
 
+console.log(getIt())
+console.log(frameIt())
+console.log(pressIt())
+console.log(submitIt())
 });
