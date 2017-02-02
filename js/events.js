@@ -24,7 +24,6 @@ function submitIt() {
   });
 }
 
-//Doc changes below//
 $(document).ready(function(){
 
 console.log(getIt())
