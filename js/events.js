@@ -8,19 +8,20 @@ $(document).ready(function(){
 
 function getIt(){
   $("p").on("click", function(){
-    alert("Hey!")
+    alert("hey!");
   })
 }
 
+
 function frameIt(){
-  $("img").on("load", function(){
-    $("img").addClass("tasty");
+  $("Img").on("load", function(){
+    $("Img").addClass("tasty");
   })
 }
 
 function pressIt(){
-  $("#typing").keydown("keydown", function(key){
-    if(key.which === 71)
+  $("#typing").on('keydown', function(key){
+    if(key.which===71)
     alert("You pressed 'g'!");
   })
 }
