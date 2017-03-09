@@ -17,6 +17,12 @@ $(document).on('keydown', function(key) {
   }
 })};
 
+function submitIt() {
+  $(document).on('submit', function() {
+    alert('Your form is going to be submitted now.');
+  })
+};
+
 /*$("form").on("submit", function() {
   if ($( "input:first" ).val() === "correct") {
     alert('your form is going to be submitted now');
@@ -40,9 +46,11 @@ frameIt()
 
 $(document).ready(function(){
 pressIt()
+});
+
+$(document).ready(function(){
+submitIt()
 })
-
-
 
 //frameIt();
 
