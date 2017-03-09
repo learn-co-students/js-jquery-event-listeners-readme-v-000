@@ -13,7 +13,7 @@ $('img').on('load', function() {
 function pressIt() {
 $(document).on('keydown', function(key) {
   if(key.which == 71){
-  $('input').alert('g was pressed');
+  alert('g was pressed');
   }
 })};
 
