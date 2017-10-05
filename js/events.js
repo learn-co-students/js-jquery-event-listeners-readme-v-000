@@ -1,4 +1,3 @@
-//define functions here
 function getIt(){
   $('p').click('click',function(){
     alert('Hey!');
@@ -23,4 +22,4 @@ function submitIt(){
   $('form').on('submit', function(e){
     alert('Your form is going to be submitted now.');
   })
-}
+};
