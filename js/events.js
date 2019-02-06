@@ -1,7 +1,7 @@
 //define functions here
 
 // bind a 'click' event (alert "Hey!") to the 'p' tag
-function getIt(){
+function getIt() {
   $('p').on('click', function() {
     alert('hey!')
   })
@@ -15,7 +15,7 @@ function frameIt() {
 }
 
 // bind 'keydown' event to form input field that alerts when 'G' key pressed
-function pressIt(){
+function pressIt() {
   $(document).on('keydown', function(key) {
     if (key.which == 71)
     alert("the 'g' key was pressed")
