@@ -136,10 +136,10 @@ wrong value, but later we'll learn how to prevent that from happening.
 
 ## Instructions
 
-You will write your code in `js/events.js`. You will want to define your
-functions outside of the document ready, and call them inside of this. This way,
-your tests will run as expected and you can test your code in the browser as
-well.
+Write your code in `js/events.js`. Define your functions in the global scope
+(outside of the document ready callback), but call them from inside the event
+listener callback. This way, your tests will run as expected and you can test
+your code in the browser as well.
 
 + Define a function `getIt` that does not accept a parameter. The function
 should bind a `click` event to the `p` tag. When the paragraph is clicked, the
